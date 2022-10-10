@@ -35,6 +35,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'super_types',
+    'supers',
 ]
 
 MIDDLEWARE = [
@@ -68,8 +71,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'heroes_villains_project.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+
 
 
 # Password validation
