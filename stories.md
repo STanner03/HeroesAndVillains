@@ -16,24 +16,24 @@ The two tables should show all of the correct properties for both entities as we
 Property names must be in snake_case and match the following exactly! 
 type – CharField 	 -->
  
-(/5 points) As a developer, I want to register the SuperType model with the admin site so I can: 
+<!-- (/5 points) As a developer, I want to register the SuperType model with the admin site so I can: 
 Register a new super user (python manage.py createsuperuser) 
 Visit the admin site 
-Seed two values (“Hero” and “Villain”) into the “super_type” table 
+Seed two values (“Hero” and “Villain”) into the “super_type” table  -->
  
-(/2.5 points) As a developer, I want to create a Super model in a “supers” app. 
+<!-- (/2.5 points) As a developer, I want to create a Super model in a “supers” app. 
 Property names must be in snake_case and match the following exactly! 
 name - CharField 
 alter_ego  - CharField 
 primary_ability - CharField 
 secondary_ability – CharField 
 catchphrase – CharField 
-super_type – ForeignKey 
+super_type – ForeignKey  -->
  
-(/2.5 points) As a developer, I want my API to serve the “supers” app’s content on the following urls paths: 
+<!-- (/2.5 points) As a developer, I want my API to serve the “supers” app’s content on the following urls paths: 
 Paths must match these exactly! 
 ‘127.0.0.1:8000/api/supers/' - optional params 
-‘127.0.0.1:8000/api/supers/<int:pk>/’ 
+‘127.0.0.1:8000/api/supers/<int:pk>/’  -->
  
 (/5 points) As a developer, I want to create a GET by id endpoint that does the following things: 
 Accepts a value from the request’s URL (The id of the super to retrieve). 
