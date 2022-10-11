@@ -1,13 +1,13 @@
-Checklist
+<!-- Checklist -->
 
 <!-- 1. Run through the Setup Setups and get your project ready to begin work. -->
-2. Review the Resources outlined below - be sure to have relevant documentation and references open while you develop!
+<!-- 2. Review the Resources outlined below - be sure to have relevant documentation and references open while you develop! -->
 <!-- 3. Create an ERD diagramming both models for the project and submit to instruction -->
-4. Complete Django REST API backend by implementing the endpoints
+<!-- 4. Complete Django REST API backend by implementing the endpoints -->
 
-Main Stories
+<!-- Main Stories -->
  
-(/2.5 points) As a developer, I want to make good, consistent commits.  
+<!-- (/2.5 points) As a developer, I want to make good, consistent commits.   -->
 
 <!-- (/2.5 points) As a developer, I want to create an ERD with two tables - Super and SuperType. 
 The two tables should show all of the correct properties for both entities as well as the correct relationship between the two tables -->
@@ -58,18 +58,18 @@ Accepts a value from the request’s URL.
 Deletes the correct super from the database 
 Returns a 204 status code (NO CONTENT).  -->
  
-(/10 points) As a developer, I want to create a GET endpoint that responds with a 200 success status code and all of the supers within the supers table. 
+<!-- (/10 points) As a developer, I want to create a GET endpoint that responds with a 200 success status code and all of the supers within the supers table. 
 This view function should be implemented in a way to accept a “type” parameter 
 Example: " http://127.0.0.1:8000/api/supers?type=hero” 
 If a type query parameter is sent to the view function with the value of “hero”, the view function response should be a list of all supers that are associated with the type of “Hero” (Shown in End Result Overview video on portal) 
-If a type query parameter is sent to the view function with the value of “villain”, the view function response should be a list of all supers that are associated with the type of “Villain” (Shown in End Result Overview video on portal) 
+If a type query parameter is sent to the view function with the value of “villain”, the view function response should be a list of all supers that are associated with the type of “Villain” (Shown in End Result Overview video on portal)  -->
  
  
  
-Bonus Stories
+<!-- Bonus Stories
 
 (5 points): If no type query parameter is sent, return a custom dictionary response with a “heroes” key set equal to a list of supers of type “Hero” and a “villains” key set equal to a list of supers of type “Villain” (Shown in End Result Overview video on portal) 
-custom_response = {“heroes” = [], “villains” = []} 
+custom_response = {“heroes” = [], “villains” = []}  -->
  
 
 

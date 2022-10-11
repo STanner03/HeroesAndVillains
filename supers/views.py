@@ -4,21 +4,28 @@ from rest_framework.response import Response
 from rest_framework import status
 from .serializers import SuperSerializer
 from .models import Super
+from super_types.serializers import SuperTypeSerializer
+from super_types.models import SuperType
 
 @api_view(['GET', 'POST'])
 def supers_list(request):
     if request.method == 'GET':
-
         type_param = request.query_params.get('type')
-
         supers = Super.objects.all()
-
+        custom_response = {}
         if type_param:
             supers = supers.filter(super_type__type=type_param)
-
-        serializer = SuperSerializer(supers, many=True)
-
-        return Response(serializer.data)
+            serializer = SuperSerializer(supers, many=True)
+            return Response(serializer.data)
+        else:
+            types = SuperType.objects.all()
+            for type in types:
+                supers = Super.objects.filter(super_type_id=type.id)
+                super_serializer = SuperSerializer(supers, many=True)
+                custom_response[type.type] = {
+                    'supers': super_serializer.data
+                }
+            return Response(custom_response)
     elif request.method == 'POST':
         serializer = SuperSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
