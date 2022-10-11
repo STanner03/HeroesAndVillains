@@ -35,28 +35,28 @@ Paths must match these exactly!
 ‘127.0.0.1:8000/api/supers/' - optional params 
 ‘127.0.0.1:8000/api/supers/<int:pk>/’  -->
  
-(/5 points) As a developer, I want to create a GET by id endpoint that does the following things: 
+<!-- (/5 points) As a developer, I want to create a GET by id endpoint that does the following things: 
 Accepts a value from the request’s URL (The id of the super to retrieve). 
 Returns a 200 status code. 
-Responds with the super in the database that has the id that was sent through the URL. 
+Responds with the super in the database that has the id that was sent through the URL.  -->
  
-(/5 points) As a developer, I want to create a POST endpoint that does the following things: 
+<!-- (/5 points) As a developer, I want to create a POST endpoint that does the following things: 
 Accepts a body object from the request in the form of a Super model. 
 Adds the new super to the database. 
 Returns a 201 status code. 
-Responds with the newly created super object. 
+Responds with the newly created super object.  -->
  
-(/5 points) As a developer, I want to create a PUT endpoint that does the following things: 
+<!-- (/5 points) As a developer, I want to create a PUT endpoint that does the following things: 
 Accepts a value from the request’s URL (The id of the super to be updated). 
 Accepts a body object from the request in the form of a Super model. 
 Finds the super in the Super table and updates that super with the properties that were sent in the request’s body. 
 Returns a 200 status code. 
-Responds with the newly updated super object. 
+Responds with the newly updated super object.  -->
  
-(/5 points) As a developer, I want to create a DELETE endpoint that does the following things: 
+<!-- (/5 points) As a developer, I want to create a DELETE endpoint that does the following things: 
 Accepts a value from the request’s URL. 
 Deletes the correct super from the database 
-Returns a 204 status code (NO CONTENT). 
+Returns a 204 status code (NO CONTENT).  -->
  
 (/10 points) As a developer, I want to create a GET endpoint that responds with a 200 success status code and all of the supers within the supers table. 
 This view function should be implemented in a way to accept a “type” parameter 
